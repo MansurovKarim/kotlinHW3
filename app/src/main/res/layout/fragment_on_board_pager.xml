@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#252525"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.onBoard.onBoardPagerFragment">
+
+
+    <TextView
+        android:layout_marginTop="-80dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginTop="300dp"
+        android:textStyle="bold"
+        android:id="@+id/TV1"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:text="Удобство"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/TV_txt"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:text="Создавайте заметки в два клика! Записывайте мысли, идеи и важные задачи мгновенно."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
