@@ -10,6 +10,7 @@
 
 
     <TextView
+        android:id="@+id/TV_notes"
         android:layout_marginTop="-80dp"
         android:textSize="24sp"
         android:textColor="@color/white"
