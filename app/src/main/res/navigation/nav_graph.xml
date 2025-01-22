@@ -3,16 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/onBoardPagerFragment">
+    app:startDestination="@id/onBoardFragment">
 
     <fragment
         android:id="@+id/onBoardFragment"
         android:name="com.example.kotlinhw3.ui.fragment.onBoard.onBoardFragment"
         android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" />
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/onBoardPagerFragment"
-        android:name="com.example.kotlinhw3.ui.fragment.onBoard.onBoardPagerFragment"
-        android:label="fragment_on_board_pager"
-        tools:layout="@layout/fragment_on_board_pager" />
+        android:id="@+id/noteFragment"
+        android:name="com.example.kotlinhw3.ui.fragment.note.NoteFragment"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" >
+        <action
+            android:id="@+id/action_noteFragment_to_detailNoteFragment"
+            app:destination="@id/detailNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailNoteFragment"
+        android:name="com.example.kotlinhw3.ui.fragment.note.DetailNoteFragment"
+        android:label="fragment_detail_note"
+        tools:layout="@layout/fragment_detail_note" />
 </navigation>
