@@ -12,6 +12,7 @@ import com.example.kotlinhw3.databinding.FragmentNoteBinding
 
 class NoteFragment : Fragment() {
     private lateinit var binding: FragmentNoteBinding
+    private val noteAdapter = NoteAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,8 +21,6 @@ class NoteFragment : Fragment() {
         binding = FragmentNoteBinding.inflate(inflater, container, false)
         return binding.root
 
-        binding.btnDetail.setOnClickListener{
-            findNavController().navigate(R.id.action_noteFragment_to_detailNoteFragment)
-        }
+
     }
 }
