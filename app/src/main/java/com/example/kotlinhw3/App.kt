@@ -2,13 +2,13 @@ package com.example.kotlinhw3
 
 import android.app.Application
 import androidx.room.Room
-import com.example.kotlinhw3.data.db.AppDAtaBase
+import com.example.kotlinhw3.data.db.AppDataBase
 import com.example.kotlinhw3.utils.PreferenceHelper
 
 class App : Application()  {
 
     companion object{
-        var appDataBase: AppDAtaBase? = null
+        var appDataBase: AppDataBase? = null
     }
 
     override fun onCreate() {
@@ -17,12 +17,12 @@ class App : Application()  {
         sharedPreferences.init(this)
         getInstance()
     }
-    private fun getInstance(): AppDAtaBase? {
+    private fun getInstance(): AppDataBase? {
         if (appDataBase == null){
             appDataBase = applicationContext?.let { context->
                 Room.databaseBuilder(
                     context,
-                    AppDAtaBase::class.java,
+                    AppDataBase::class.java,
                     "note_database"
                 ).fallbackToDestructiveMigration().allowMainThreadQueries().build()
             }

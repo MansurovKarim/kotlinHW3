@@ -1,5 +1,6 @@
 package com.example.kotlinhw3.data.db.daos
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -12,7 +13,7 @@ import com.example.kotlinhw3.data.models.NoteModel
 interface Dao {
 
     @Query("SELECT * FROM noteModel")
-    fun getAll(): List<NoteModel>
+    fun getAll(): LiveData<List<NoteModel>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertNote(noteModel: NoteModel)

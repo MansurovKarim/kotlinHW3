@@ -15,6 +15,15 @@
             app:destination="@id/noteFragment" />
     </fragment>
     <fragment
+        android:id="@+id/detailNoteFragment"
+        android:name="com.example.kotlinhw3.ui.fragment.note.DetailNoteFragment"
+        android:label="fragment_detail_note"
+        tools:layout="@layout/fragment_detail_note" >
+        <argument
+            android:name="noteId"
+            app:argType="integer"/>
+    </fragment>
+    <fragment
         android:id="@+id/noteFragment"
         android:name="com.example.kotlinhw3.ui.fragment.note.NoteFragment"
         android:label="fragment_note"
@@ -23,9 +32,4 @@
             android:id="@+id/action_noteFragment_to_detailNoteFragment"
             app:destination="@id/detailNoteFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/detailNoteFragment"
-        android:name="com.example.kotlinhw3.ui.fragment.note.DetailNoteFragment"
-        android:label="fragment_detail_note"
-        tools:layout="@layout/fragment_detail_note" />
 </navigation>

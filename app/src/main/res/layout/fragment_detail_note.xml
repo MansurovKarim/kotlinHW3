@@ -23,17 +23,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Готово"
-        android:textColor="@color/orange"
+        android:textColor="#D88B02"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/im_back"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_margin="20dp"
@@ -50,5 +52,26 @@
         android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="@id/title"
         app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDate"
+        android:text="34567899"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@id/im_back"
+        app:layout_constraintStart_toEndOf="@id/im_back"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivColor"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@id/save"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/klklklkl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

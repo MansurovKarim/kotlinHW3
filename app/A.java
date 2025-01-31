@@ -1,0 +1,1 @@
+implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
